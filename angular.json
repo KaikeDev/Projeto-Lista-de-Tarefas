@@ -95,12 +95,12 @@
             "scripts": []
           }
         },
-        "deploy": {
+       "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-              "baseHref": "/Projeto-Lista-de-Tarefas"
-          }
+           "baseHref": "/Projeto-Lista-de-Tarefas/"
         }
+          }
       }
     }
   }
