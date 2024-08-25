@@ -17,13 +17,14 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   templateUrl: './input-add-item.component.html',
   styleUrl: './input-add-item.component.scss',
+
 })
 export class InputAddItemComponent {
   #cdr = inject(ChangeDetectorRef);
 
   @ViewChild('inputText') public inputText!: ElementRef;
 
-
+  
   @Input({ required: true}) public inputListItems: iListItems[] = []
 
   @Output() public outputAddListItems = new EventEmitter<iListItems>();
